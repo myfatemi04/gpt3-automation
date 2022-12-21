@@ -1,4 +1,4 @@
-# GPT-3 For Shell
+# GPT-3 For Automation
 
 By [Michael Fatemi](https://linkedin.com/in/michaelfatemi/), December 2022
 
@@ -12,7 +12,9 @@ I'm also working on [AugmateAI](https://augmateai.michaelfatemi.com/)
 
  - Automatically cuts off the context that would cause the token count to overflow.
 
- - Optionally, you can make it possible to search Bing for answers to questions, but you need an Azure account and the environment variable `BING_SEARCH_V7_SUBSCRIPTION_KEY1`.
+ - Optionally, you can make it possible to search Bing for answers to questions, but you need an Azure account and the environment variable `BING_SEARCH_V7_SUBSCRIPTION_KEY1`. GPT-3 is made aware of this through the prompt, if you don't want this then remove the corresponding line from the prompt.
+ 
+ - Optionally, you can make it possible to load text content of pages on the web. This requires installing the packages in `package.json`, because there are libraries to do that that are implemented in JavaScript but not with Python. This is also signalled to GPT-3 through the prompt, and you can remove it from the prompt if you don't want to have that feature.
 
  - Have fun and feel free to share any interesting behavior with me!
 
